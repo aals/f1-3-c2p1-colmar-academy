@@ -1,0 +1,359 @@
+/*fonts-load*/
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+/* latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+    
+/*Universal*/
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Raleway';
+    line-height: 2rem;
+}
+.container{
+    margin: 0 auto;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 3.5rem;
+    color: #303030;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: #303030;
+}
+h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+p{
+    font-family: "Open Sans";
+}
+/*Header*/
+header{
+    display: flex;
+    /*position: fixed;
+    z-index: 1;*/
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    height: 4rem;
+    background-color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 3.125rem;
+    padding: 0.625rem;
+}
+nav{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+header nav a{
+    color: black;
+    text-decoration: unset;
+    padding-right:1rem;
+}
+.logo span{
+    font-size: 2rem;
+    font-family: "Open Sans";
+}
+#colmar{
+    color: #303030;
+    font-weight: bold;
+}
+#academy{
+    color: gainsboro;
+}
+
+/*Banner*/
+.banner{
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+}
+.banner-left{
+    width: 60%;
+    display: flex;
+    margin: 2rem 1.5rem;
+}
+.banner-left img{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+}
+.banner-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.banner-right h1{
+    margin: 1.25rem 0;
+}
+
+.banner-right h2{
+    margin: 1.25rem 0;
+}
+button{
+    border: none;
+    color: white;
+    background-color: #303030;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    width: 70%;
+    margin: 1.875rem 0;
+}
+/*Information & Thesis*/
+.box{
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+}
+.title{
+    padding-top: 2rem;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid gainsboro;
+}
+.main h1{
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+}
+.main h6{
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+.main h4{
+     margin-top: 1.5rem;
+     margin-bottom: 0.5rem;
+}
+.main img{
+    width: 100%;
+    height: auto;
+    background-size:cover;    
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 1rem;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    border-bottom: 1px solid gainsboro;
+}
+.item-img{
+    width: 35%;
+    margin: 1rem;
+    overflow: hidden;
+}
+.item-img img{
+    width: 100%;
+    height: auto;
+    background-size:cover;    
+}
+.item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding-right: 1rem;
+}
+.item-content h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.item-content a{
+    text-decoration: unset;
+}
+.item:hover{
+    background-color: gainsboro;
+}
+/*Courses*/
+.section-title{
+    text-align: center;
+    padding-bottom: 32px
+}
+.courses{
+    background-color: gainsboro;
+    padding: 2rem 4.5rem;    
+}
+.courses-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.courses-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 25%;
+    background-color: white;
+}
+.courses-item-img{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-size:cover;
+}
+.courses-item-content{
+    padding: 1rem 2rem 1.5rem 1rem;
+}
+#courses-text{
+    margin: 0.5rem 0;
+}
+video{
+    height: auto;
+    width: 100%;
+}
+.no-border{
+    border: none;
+}
+.mobile-header,
+.mobile-banner,
+.mobile-info,
+.mobile-courses,
+.mobile-thesis,
+.mobile-footer{
+    display: none;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+    /*hides*/
+    .desktop-header,
+    .banner,
+    .desktop-info,
+    .courses,
+    .desktop-thesis,
+    .desktop-footer
+    {
+        display: none;
+    }
+    /*mobile header*/
+    .mobile-header{
+        display: flex;
+    }
+    .mobile-header a{
+        padding: 0.625rem 1.25rem;
+    }
+    /*mobile banner*/
+    .mobile-banner{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 2rem 1rem;
+        background-color: gainsboro;
+        
+    }
+    .mobile-banner h1{
+        margin-bottom: 2rem;
+    }
+    .mobile-banner button{
+        margin-top: 1.5rem;
+        width: 90%;
+        align-self: center;
+    }
+    /*mobile info*/
+    .mobile-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .mobile-info .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        border: none;
+    }
+    .item .item-img{
+        width: 100%;
+        overflow: hidden;
+        background-repeat: cover;
+        height: 50%;
+    }
+    .item .item-content{
+        width: 100%;
+        padding: 2rem;
+    }
+    /*mobile courses*/
+    .mobile-courses{
+        display: block;
+        padding: 2rem 1.5rem;
+    }
+    .mobile-courses .section-title{
+        font-size: 2rem;
+    }
+    .mobile-courses .courses-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-courses .courses-item{
+        background-color: gainsboro;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+    /*mobile thesis*/
+    .mobile-thesis{
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .mobile-thesis .title{
+        padding-bottom: 1rem;
+    }
+    /*mobile footer*/
+    .mobile-footer{
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+        
+}
